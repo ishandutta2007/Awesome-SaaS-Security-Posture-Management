@@ -22,41 +22,21 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 - [Disclaimer](#disclaimer)
 
 ## SaaS/Hosted Platforms
-- **[Adaptive Shield / CrowdStrike Falcon Shield](https://www.crowdstrike.com/)**  
-  SSPM capability (acquired Adaptive Shield) integrated into the CrowdStrike Falcon platform, covering configuration posture, compliance, and app hardening across a broad SaaS catalog.
 
-- **[Obsidian Security](https://www.obsidiansecurity.com/)**  
-  SaaS security platform combining posture management with identity-aware threat detection and activity analysis for mature SOC teams.
-
-- **[Wing Security](https://wing.security/)**  
-  SSPM and SaaS discovery platform strong on shadow IT, third-party app inventory, and supply-chain style risk across the SaaS estate.
-
-- **[AppOmni](https://appomni.com/)**  
-  Deep configuration and posture management for critical enterprise SaaS (Salesforce, Workday, ServiceNow, M365, etc.), widely used for audit-grade governance.
-
-- **[Netskope SSPM](https://www.netskope.com/)**  
-  SaaS security posture capabilities within the broader Netskope Security Service Edge (SSE) portfolio, alongside CASB and data protection.
-
-- **[Grip Security](https://www.grip.security/)**  
-  SaaS security platform focused on discovering and securing the full SaaS estate, including shadow SaaS identified via identity and other signals.
-
-- **[Valence Security](https://www.valence.security/)**  
-  SSPM oriented toward SaaS-to-SaaS integrations, OAuth scopes, and collaborative remediation of third-party app risk.
-
-- **[Palo Alto Prisma SaaS / SSPM](https://www.paloaltonetworks.com/)**  
-  SaaS security and posture management within the Prisma / SaaS Security portfolio for configuration and data risk visibility.
-
-- **[Spin.AI](https://www.spin.ai/)**  
-  SaaS security platform with posture, data protection, and backup-oriented capabilities for Microsoft 365 and Google Workspace.
-
-- **[Reco](https://www.reco.ai/)**  
-  AI-driven SaaS security platform analyzing user behavior, sharing patterns, and posture risks with an emphasis on low-noise findings.
-
-- **[DoControl](https://www.docontrol.io/)**  
-  SaaS data and posture security platform with no-code workflows for governance, access control, and automated response.
-
-- **[BetterCloud](https://www.bettercloud.com/)**  
-  SaaS operations and security platform focused on automated management, policy enforcement, and posture across business applications.
+| Platform | Description | Pricing (Starting Tier) | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Adaptive Shield / CrowdStrike Falcon Shield](https://www.crowdstrike.com/)** | SSPM capability integrated into the CrowdStrike Falcon platform, covering configuration posture, compliance, and app hardening across a broad SaaS catalog. | Starts at **~$59.99/device/year** (entry Falcon) / SSPM module starting from **~$3,000–$5,000/year** (~$3.50/user/month) | **15-day free trial** with access to Falcon platform modules & SaaS posture evaluation for up to 25 connectors/endpoints |
+| **[Obsidian Security](https://www.obsidiansecurity.com/)** | SaaS security platform combining posture management with identity-aware threat detection and activity analysis for mature SOC teams. | Starts at **~$30/user/year** (~$2.50/user/month; entry package starting at **~$2,500/year**) | **14-day free trial** with core posture analysis & identity risk assessment for up to 5 core SaaS apps (e.g., M365, Google Workspace, Okta) |
+| **[Wing Security](https://wing.security/)** | SSPM and SaaS discovery platform strong on shadow IT, third-party app inventory, and supply-chain style risk across the SaaS estate. | **Free tier available**; paid SMB tier starts at **~$1,500/year** (~$125/month) | **Free Forever plan** (SaaS Discovery & SaaS Pulse: unlimited time, shadow IT discovery, MITRE CWSS security health score); **14-day free trial** for Pro automated remediation |
+| **[AppOmni](https://appomni.com/)** | Deep configuration and posture management for critical enterprise SaaS (Salesforce, Workday, ServiceNow, M365, etc.), widely used for audit-grade governance. | Starts at **$7,500/year** (AWS Marketplace base tier for up to 100 users) | **14-day free trial** / Free SaaS Risk Assessment scanning 1 primary SaaS tenant (e.g., Microsoft 365 or Salesforce) |
+| **[Netskope SSPM](https://www.netskope.com/)** | SaaS security posture capabilities within the broader Netskope Security Service Edge (SSE) portfolio, alongside CASB and data protection. | Starts at **~£111–£120 (~$140–$150)/user/year** for SSPM/CASB packages (~$12.50/user/month) | **14-day free trial** / 30-day guided Proof of Concept (POC) with full API inspection for up to 3 cloud applications |
+| **[Grip Security](https://www.grip.security/)** | SaaS security platform focused on discovering and securing the full SaaS estate, including shadow SaaS identified via identity and other signals. | Starts at **~$15,000/year** (~$3.00/user/month baseline enterprise package) | **14-day free trial** / Free SaaS Discovery Assessment evaluating historical SSO, IdP, and browser-identified SaaS apps |
+| **[Valence Security](https://www.valence.security/)** | SSPM oriented toward SaaS-to-SaaS integrations, OAuth scopes, and collaborative remediation of third-party app risk. | Starts at **~$12,000/year** (~$2.50–$3.00/user/month entry baseline) | **14-day free trial** / Free SaaS-to-SaaS Risk Assessment covering up to 50 OAuth/third-party integrations |
+| **[Palo Alto Prisma SaaS / SSPM](https://www.paloaltonetworks.com/)** | SaaS security and posture management within the Prisma / SaaS Security portfolio for configuration and data risk visibility. | Starts at **~$9,000/year** (100 Prisma Cloud Credits at ~$90/credit entry tier on AWS/Azure Marketplace) | **30-day free trial** protecting up to 50 cloud workloads/accounts and connected SaaS applications |
+| **[Spin.AI](https://www.spin.ai/)** | SaaS security platform with posture, data protection, and backup-oriented capabilities for Microsoft 365 and Google Workspace. | Starts at **$3.00/user/month** ($36/user/year; minimum $5,000/year for enterprise contract) | **15-day free trial** for up to 50 users/mailboxes with full SpinSPM posture and data backup features |
+| **[Reco](https://www.reco.ai/)** | AI-driven SaaS security platform analyzing user behavior, sharing patterns, and posture risks with an emphasis on low-noise findings. | Starts at **~$15,000/year** (~$3.50/user/month mid-market tier) | **14-day free trial** / SaaS & AI Risk Assessment analyzing up to 5 SaaS apps and connected generative AI tools |
+| **[DoControl](https://www.docontrol.io/)** | SaaS data and posture security platform with no-code workflows for governance, access control, and automated response. | Starts at **~$12,000/year** (~$2.50/user/month starter tier) | **14-day free trial** (via AWS Marketplace) / Free SaaS Risk Exposure Assessment scanning up to 10,000 SaaS assets and shares |
+| **[BetterCloud](https://www.bettercloud.com/)** | SaaS operations and security platform focused on automated management, policy enforcement, and posture across business applications. | **Free tier available**; paid plans start at **~$3.00–$5.00/user/month** (~$36–$60/user/year) | **Free Forever plan** (Spend Optimization Basic: 1 financial integration, 1 extension, up to 10 contracts); **14 to 21-day free trial** for File Governance & automation modules |
 
 ## Open-Source GitHub Projects
 - **[Aperio](https://github.com/writer/aperio)**  
