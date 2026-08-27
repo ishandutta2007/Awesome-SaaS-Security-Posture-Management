@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#7f00ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#e100ff" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 20px #00f2fe); }
+    }
+    @keyframes rotateClockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateCounter {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-15px) translateX(10px); opacity: 0.9; }
+    }
+    @keyframes gridPulse {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.3; }
+    }
+
+    .shield-icon {
+      transform-origin: 980px 200px;
+      animation: pulse 4s ease-in-out infinite;
+    }
+    .ring-outer {
+      transform-origin: 980px 200px;
+      animation: rotateClockwise 25s linear infinite;
+    }
+    .ring-inner {
+      transform-origin: 980px 200px;
+      animation: rotateCounter 18s linear infinite;
+    }
+    .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 7s ease-in-out infinite 1s; }
+    .particle-3 { animation: floatParticle 6s ease-in-out infinite 2s; }
+    .grid-lines { animation: gridPulse 6s ease-in-out infinite; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Cyber Grid Lines -->
+  <g class="grid-lines" stroke="#00f2fe" stroke-width="0.5">
+    <line x1="0" y1="50" x2="1200" y2="50" />
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="250" x2="1200" y2="250" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="100" y1="0" x2="100" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="400" y1="0" x2="400" y2="400" />
+    <line x1="500" y1="0" x2="500" y2="400" />
+    <line x1="600" y1="0" x2="600" y2="400" />
+    <line x1="700" y1="0" x2="700" y2="400" />
+    <line x1="800" y1="0" x2="800" y2="400" />
+    <line x1="900" y1="0" x2="900" y2="400" />
+    <line x1="1000" y1="0" x2="1000" y2="400" />
+    <line x1="1100" y1="0" x2="1100" y2="400" />
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="100" r="180" fill="#00f2fe" opacity="0.08" filter="url(#soft-glow)" />
+  <circle cx="980" cy="200" r="220" fill="#7f00ff" opacity="0.12" filter="url(#soft-glow)" />
+
+  <!-- Floating Ambient Particles -->
+  <circle class="particle-1" cx="150" cy="280" r="3" fill="#00f2fe" filter="url(#glow)" />
+  <circle class="particle-2" cx="450" cy="80" r="4" fill="#38ef7d" filter="url(#glow)" />
+  <circle class="particle-3" cx="720" cy="320" r="3" fill="#e100ff" filter="url(#glow)" />
+  <circle class="particle-1" cx="620" cy="110" r="2.5" fill="#00f2fe" />
+  <circle class="particle-2" cx="300" cy="330" r="3.5" fill="#4facfe" />
+
+  <!-- Text Header Section -->
+  <g transform="translate(80, 0)">
+    <!-- Top Pill Tag -->
+    <g transform="translate(0, 75)">
+      <rect width="260" height="32" rx="16" fill="#00f2fe" fill-opacity="0.12" stroke="#00f2fe" stroke-width="1.2" />
+      <circle cx="16" cy="16" r="5" fill="#38ef7d" filter="url(#glow)" />
+      <text x="32" y="21" fill="#00f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">CURATED AWESOME LIST</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="165" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">
+      Awesome <tspan fill="url(#cyan-glow)">SSPM</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="215" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500">
+      SaaS Security Posture Management Ecosystem
+    </text>
+
+    <!-- Description / Scope -->
+    <text x="0" y="260" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+      Configuration Auditing &#x2022; Identity &amp; OAuth Governance &#x2022; Shadow IT &#x2022; Continuous Compliance
+    </text>
+
+    <!-- Feature Badges Row -->
+    <g transform="translate(0, 295)">
+      <!-- Badge 1 -->
+      <rect width="130" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="12" y="18" fill="#38ef7d" font-family="sans-serif" font-size="12" font-weight="600">&#x1F6E1;&#xFE0F; 12+ SaaS Tools</text>
+
+      <!-- Badge 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="165" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="12" y="18" fill="#00f2fe" font-family="sans-serif" font-size="12" font-weight="600">&#x2B50; Top Open-Source</text>
+      </g>
+
+      <!-- Badge 3 -->
+      <g transform="translate(319, 0)">
+        <rect width="160" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="12" y="18" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="600">&#x1F4B0; Pricing &amp; Limits</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Visual: Animated Security Orbit & Shield -->
+  <g>
+    <!-- Outer Orbit Ring -->
+    <circle class="ring-outer" cx="980" cy="200" r="140" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.4" />
+
+    <!-- Outer Orbit Node -->
+    <g class="ring-outer">
+      <circle cx="1120" cy="200" r="8" fill="#00f2fe" filter="url(#glow)" />
+      <circle cx="840" cy="200" r="6" fill="#38ef7d" filter="url(#glow)" />
+    </g>
+
+    <!-- Middle Orbit Ring -->
+    <circle class="ring-inner" cx="980" cy="200" r="100" fill="none" stroke="#e100ff" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.5" />
+
+    <g class="ring-inner">
+      <circle cx="980" cy="100" r="7" fill="#e100ff" filter="url(#glow)" />
+      <circle cx="980" cy="300" r="5" fill="#00f2fe" filter="url(#glow)" />
+    </g>
+
+    <!-- Inner Glowing Core Circle -->
+    <circle cx="980" cy="200" r="65" fill="#0f172a" stroke="#00f2fe" stroke-width="2" filter="url(#glow)" opacity="0.9" />
+
+    <!-- Center Security Shield SVG Icon -->
+    <g class="shield-icon" transform="translate(0, 0)">
+      <path d="M 980 155 
+               L 1015 170 
+               C 1015 210 980 245 980 245 
+               C 980 245 945 210 945 170 
+               Z" 
+            fill="url(#shield-grad)" 
+            stroke="#ffffff" 
+            stroke-width="2" 
+            filter="url(#glow)" />
+      <!-- Inner Shield Checkmark Graphic -->
+      <path d="M 968 200 L 977 210 L 994 188" 
+            fill="none" 
+            stroke="#ffffff" 
+            stroke-width="3.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>
